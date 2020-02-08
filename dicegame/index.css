@@ -1,0 +1,118 @@
+
+*{
+  font-family: Lato , sans-serif;
+  font-weight: 300;
+  margin:0;
+  padding: 0;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+     background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)) , url(img/back.jpg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     font-family: Lato;
+     font-weight: 300;
+
+     height: 100vh;
+ }
+.gameBox{
+  background: white;
+  position: absolute;
+  left: 50%;;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  min-width: 800px;
+
+}
+.player-1,
+.player-2{
+        text-align: center;
+
+}
+.player-1{
+  width: 50%;
+  float: left;
+}
+.player-2{
+  width: 50%;
+  float: right;
+}
+.playername {
+
+  font-size: 40px;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-weight: 100;
+   margin-top: 50px;
+   margin-bottom: 20px;
+
+}
+.mainscore{
+  padding-bottom: 20px;
+  margin-top: 20px;
+  font-size: 50px;
+  font-weight: 100;
+  color: #EB4D4D;
+}
+.current-scorebox{
+  padding: 10px;
+  background-color:#EB4D4D;
+  color: white;
+  display: inline-block;
+  margin: 100px 0 50px 0;
+}
+.current-score{
+  font-size: 30px;
+}
+.active{
+  background-color: rgba(210, 215, 211, 0.5);
+
+}
+.active .playername{
+font-weight: 300;
+}
+.active .mainscore{
+font-weight: 300;
+}
+
+.btn-ng{
+  background:none;
+  border: none;
+  position: absolute;
+  left: 50%;
+  top:70%;
+  transform: translateX(-50%);
+  font-size: 20px;
+}
+.btn-rd{
+  background:none;
+  border: none;
+  position: absolute;
+  left: 50%;
+  top:80%;
+  transform: translateX(-50%);
+  font-size: 20px;
+}
+.btn:active{
+  font-weight: 600;
+  margin-right: 2px;
+}
+.btn:focus{
+  outline: none;
+}
+.dice{
+  position: absolute;
+  width: 70px;
+  top: 15%;
+  left:50%;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.20);
+
+  transform: translateX(-50%);
+}
